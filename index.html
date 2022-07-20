@@ -21,9 +21,43 @@
   </head>
   <body>
     <div class="container">
-      <h1>hello World</h1>
-      <h2>building from srcatch</h2>
-      <a href="" class="btn btn-primary">Click here</a>
+      <div class="weatherApp">
+        <form id="search">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <input
+                  type="search"
+                  autofocus="on"
+                  placeholder="Search for City"
+                  class="form-control shadow-sm"
+                  id="search-city-input"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="col-2">
+              <button type="submit" id="button" class="btn shadow-sm">
+                Search
+              </button>
+            </div>
+            <div class="col-2">
+              <button type="submit" id="location-button" class="btn shadow-sm">
+                Location
+              </button>
+            </div>
+          </div>
+
+      <footer>
+          <a
+            href="https://github.com/LyaMael/weather-app-project"
+            target="blank"
+            class="github"
+          >
+            Open-source code</a
+          >
+          by Janina Wehner
+        </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
