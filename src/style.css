@@ -2,6 +2,10 @@ footer {
   color: #575e94;
   text-align: center;
 }
+form ul {
+  list-style: none;
+  padding-left: 5px;
+}
 .github {
   color: #575e94;
   text-decoration: none;
@@ -25,6 +29,10 @@ footer {
   border-color: #aa97c7;
   background-color: #f9f3f3;
 }
+#search {
+  padding: 10px 20px;
+  font-family: "Fuzzy Bubbles", cursiv;
+}
 .btn {
   color: #aa97c7;
   background-color: #f9f3f3;
@@ -38,4 +46,54 @@ footer {
 .col-6 {
   padding: 0;
   padding-right: 0px;
+}
+.heading {
+  font-family: "Gugi", cursive;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #4f568a;
+  padding: 10px 20px 0px 20px;
+}
+
+.degree {
+  font-size: 70px;
+  padding: 10px 20px;
+}
+
+#different-messure :hover {
+  cursor: pointer;
+}
+.messure {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.weatherDetails {
+  padding-left: 20px;
+}
+
+#symbol-now {
+  padding: 0;
+}
+#current-image {
+  margin-top: 170px;
+  padding: 10px;
+}
+.weather-today {
+  border: 5px solid #dfd1e3;
+  border-radius: 50%;
+  text-align: center;
+  width: 220px;
+  height: 220px;
+  margin: 50px auto;
+  padding: 45px 0;
+}
+.sunset {
+  font-size: 20px;
+}
+.weatherApp hr {
+  margin: 20px 20px;
+  color: #575e94;
+  opacity: 90%;
 }
