@@ -1,3 +1,9 @@
+body {
+  background-image: url("../images/pexels-eberhard-grossgasteiger-1097491 2.jpg");
+
+  background-attachment: fixed;
+  background-size: cover;
+}
 footer {
   color: #575e94;
   text-align: center;
@@ -31,7 +37,6 @@ form ul {
 }
 #search {
   padding: 10px 20px;
-  font-family: "Fuzzy Bubbles", cursiv;
 }
 .btn {
   color: #aa97c7;
@@ -46,6 +51,9 @@ form ul {
 .col-6 {
   padding: 0;
   padding-right: 0px;
+}
+#main-info {
+  font-family: "Fuzzy Bubbles", cursiv;
 }
 .heading {
   font-family: "Gugi", cursive;
