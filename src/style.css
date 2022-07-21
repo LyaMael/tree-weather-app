@@ -20,7 +20,7 @@ form ul {
   color: #575e94;
   text-decoration: none;
 }
-.weatherApp {
+.weather-app-wrapper {
   margin: auto;
   margin-top: 40px;
   max-width: 900px;
@@ -52,7 +52,9 @@ form ul {
   cursor: pointer;
   opacity: 0.9;
 }
-
+#submit-button {
+  width: 12%;
+}
 #main-info {
   font-family: "Fuzzy Bubbles", cursiv;
   padding: 10px 20px 10px 30px;
