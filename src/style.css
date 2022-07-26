@@ -91,7 +91,7 @@ hr {
 .units .active {
   color: #212529;
 }
-#fahrenheit {
+.units .inactive {
   color: #4f568a;
 }
 

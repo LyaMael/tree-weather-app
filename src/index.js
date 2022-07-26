@@ -102,13 +102,17 @@ function displayFahrenheit(event) {
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = fahrenheitTemp;
   celsiusLink.classList.remove("active");
+  celsiusLink.classList.add("inactive");
   fahrenheitLink.classList.add("active");
+  fahrenheitLink.classList.remove("inactive");
 }
 function displayCelsius(event) {
   event.preventDefault();
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
   celsiusLink.classList.add("active");
+  celsiusLink.classList.remove("inactive");
   fahrenheitLink.classList.remove("active");
+  fahrenheitLink.classList.add("inactive");
 }
 let searchForm = document.querySelector("#search");
 searchForm.addEventListener("submit", handleSubmit);
