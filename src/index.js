@@ -127,4 +127,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 let celsiusLink = document.querySelector("#celsius");
 fahrenheitLink.addEventListener("click", displayCelsius);
 
-search("Seattle");
+search("Berlin");
