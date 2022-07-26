@@ -77,8 +77,10 @@ form ul {
 #different-messure :hover {
   cursor: pointer;
 }
-.messure {
+.units {
   font-size: 20px;
+  position: relative;
+  top: -35px;
 }
 
 #symbol-now {

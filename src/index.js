@@ -46,7 +46,7 @@ function showTemp(response) {
   ).innerHTML = `${response.data.name}, ${response.data.sys.country}`;
   document.querySelector("#current-temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°`;
+  )}`;
   document.querySelector(
     "#wind"
   ).innerHTML = `Wind: ${response.data.wind.speed}km/h`;
