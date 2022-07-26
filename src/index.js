@@ -47,6 +47,7 @@ function showTemp(response) {
   document.querySelector("#current-temperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}`;
+  celsiusTemp = response.data.main.temp;
   document.querySelector(
     "#wind"
   ).innerHTML = `Wind: ${response.data.wind.speed}km/h`;
@@ -94,11 +95,21 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentPosition);
 }
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemp = Math.round((22 * 9) / 5 + 32);
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = fahrenheitTemp;
+}
 let searchForm = document.querySelector("#search");
 searchForm.addEventListener("submit", handleSubmit);
-search("Seattle");
 
+let celsiusTemp = null;
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getLocation);
 
-//
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+search("Seattle");
