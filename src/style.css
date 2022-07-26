@@ -108,17 +108,17 @@ hr {
   padding: 0;
 }
 #current-image {
-  margin-top: 170px;
-  padding: 10px;
+  margin-top: 12px;
+  padding: 27px 75px 75px 0px;
 }
 .weather-today {
   border: 5px solid #dfd1e3;
   border-radius: 50%;
   text-align: center;
-  width: 220px;
-  height: 220px;
-  margin: 50px auto;
-  padding: 45px 0;
+  width: 290px;
+  height: 290px;
+  margin: 37px auto;
+  padding: 83px 0;
 }
 .sunset {
   font-size: 20px;
