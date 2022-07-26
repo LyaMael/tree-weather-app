@@ -68,6 +68,9 @@ function showTemp(response) {
     minute: "2-digit",
   });
   document.querySelector("#hour-sunrise").innerHTML = `${localised}`;
+  let icon = document.querySelector("#current-image");
+  icon.setAttribute("alt", response.data.weather[0].main);
+  icon.setAttribute("src", `images/${response.data.weather[0].icon}.svg`);
 }
 
 function search(city) {
