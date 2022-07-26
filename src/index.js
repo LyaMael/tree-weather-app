@@ -101,10 +101,14 @@ function displayFahrenheit(event) {
   let fahrenheitTemp = Math.round((celsiusTemp * 9) / 5 + 32);
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = fahrenheitTemp;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 function displayCelsius(event) {
   event.preventDefault();
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 let searchForm = document.querySelector("#search");
 searchForm.addEventListener("submit", handleSubmit);

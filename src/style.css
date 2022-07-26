@@ -77,8 +77,10 @@ hr {
 .degree {
   font-size: 70px;
 }
-
-#different-messure :hover {
+.units a {
+  text-decoration: none;
+}
+.units :hover {
   cursor: pointer;
 }
 .units {
@@ -86,6 +88,13 @@ hr {
   position: relative;
   top: -35px;
 }
+.units .active {
+  color: #212529;
+}
+#fahrenheit {
+  color: #4f568a;
+}
+
 .weatherDetails {
   padding: 10px;
   border: 1px solid #4f568a;
