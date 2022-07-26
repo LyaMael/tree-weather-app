@@ -80,9 +80,7 @@ hr {
 .units a {
   text-decoration: none;
 }
-.units :hover {
-  cursor: pointer;
-}
+
 .units {
   font-size: 20px;
   position: relative;
@@ -94,7 +92,12 @@ hr {
 .units .inactive {
   color: #4f568a;
 }
-
+.units .inactive:hover {
+  font-size: larger;
+}
+.units :hover {
+  cursor: pointer;
+}
 .weatherDetails {
   padding: 10px;
   border: 1px solid #4f568a;
