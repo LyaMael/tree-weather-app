@@ -98,7 +98,7 @@ function getLocation(event) {
 
 function displayFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemp = Math.round((22 * 9) / 5 + 32);
+  let fahrenheitTemp = Math.round((celsiusTemp * 9) / 5 + 32);
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = fahrenheitTemp;
 }
