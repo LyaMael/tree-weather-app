@@ -39,6 +39,27 @@ let now = new Date();
 let date = document.querySelector("#current-date");
 date.innerHTML = foramtDate(date);
 //
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+            <div class="weather-forecast-date">${day}</div> 
+              <img src="images/01d.svg" alt="" width ="42">
+              <div class="forecast-temp">
+              <span class="forecast-max"> 28°</span>
+              <span class="forecast-min"> 20°</span> 
+              </div> 
+            </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 function showTemp(response) {
   console.log(response.data);
   document.querySelector(
@@ -128,3 +149,4 @@ let celsiusLink = document.querySelector("#celsius");
 fahrenheitLink.addEventListener("click", displayCelsius);
 
 search("Berlin");
+displayForecast();
