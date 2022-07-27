@@ -111,7 +111,7 @@ hr {
   margin-top: 12px;
   padding: 27px 75px 75px 0px;
 }
-.weather-today {
+.sunset-today {
   border: 5px solid #dfd1e3;
   border-radius: 50%;
   text-align: center;
@@ -127,4 +127,17 @@ hr {
   margin: 20px 20px;
   color: #575e94;
   opacity: 90%;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+}
+.forecast-temp {
+  font-size: 13px;
+}
+.forecast-min {
+  opacity: 0.6;
 }
