@@ -60,6 +60,12 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = `0b72be15629b34cd08cec539aec6e195`;
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=hourly,historical,minutely&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+}
 function showTemp(response) {
   console.log(response.data);
   document.querySelector(
@@ -93,6 +99,7 @@ function showTemp(response) {
   let icon = document.querySelector("#current-image");
   icon.setAttribute("alt", response.data.weather[0].main);
   icon.setAttribute("src", `images/${response.data.weather[0].icon}.svg`);
+  getForecast(response.data.coord);
 }
 
 function search(city) {
