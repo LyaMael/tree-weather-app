@@ -72,11 +72,13 @@ hr {
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   color: #4f568a;
   padding-top: 0;
 }
-
+.currentTemp {
+  margin: 10px 0px;
+}
 .degree {
   font-size: 70px;
 }
@@ -103,6 +105,7 @@ hr {
 }
 .weatherDetails {
   padding: 10px;
+
   border: 1px solid #4f568a;
   font-size: 15px;
   color: rgb(66, 61, 61);
@@ -117,11 +120,12 @@ hr {
 }
 .sunset-today {
   border: 5px solid #dfd1e3;
+
   border-radius: 50%;
   text-align: center;
   width: 290px;
   height: 290px;
-  margin: 37px auto;
+  margin: 23px 0px 37px 20px;
   padding: 83px 0;
 }
 .sunset {
@@ -144,6 +148,7 @@ hr {
   background-color: #dfd1e3;
   border-radius: 50%;
   padding: 5px;
+  border: 1px solid #575e94;
 }
 .weather-forecast-date {
   font-size: 16px;
