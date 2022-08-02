@@ -59,7 +59,7 @@ function displayForecast(response) {
             <div class="weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div> 
-              <img class = "imagForecast" src="images/${
+              <img class = "imagForecast shadow" src="images/${
                 forecastDay.weather[0].icon
               }.svg" alt="" width ="48">
               <div class="forecast-temp">
