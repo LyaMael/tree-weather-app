@@ -24,6 +24,9 @@ hr {
   color: #575e94;
   text-decoration: none;
 }
+.github:hover {
+  color: #ccbce4;
+}
 .weather-app-wrapper {
   margin: auto;
   margin-top: 40px;
