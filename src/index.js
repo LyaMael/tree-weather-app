@@ -55,13 +55,13 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-            <div class="col-2">
+            <div class="col-2 shadow" id = "forecast-col">
             <div class="weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div> 
-              <img src="images/${
+              <img class = "imagForecast" src="images/${
                 forecastDay.weather[0].icon
-              }.svg" alt="" width ="42">
+              }.svg" alt="" width ="48">
               <div class="forecast-temp">
               <span class="forecast-max"> ${Math.round(
                 forecastDay.temp.max

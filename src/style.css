@@ -108,7 +108,8 @@ hr {
   padding: 0;
 }
 #current-image {
-  margin-top: 12px;
+  margin-top: 83px;
+  margin-left: 40px;
   padding: 27px 75px 75px 0px;
 }
 .sunset-today {
@@ -132,11 +133,24 @@ hr {
   margin-top: 20px;
   text-align: center;
 }
+#forecast-col {
+  border: 1px solid #575e94;
+  padding: 12px 12px;
+
+  background-color: #b3a2cc;
+}
+.imagForecast {
+  background-color: #dfd1e3;
+  border-radius: 50%;
+  padding: 5px;
+}
 .weather-forecast-date {
   font-size: 16px;
+  padding: 15px 0px;
 }
 .forecast-temp {
   font-size: 13px;
+  padding: 15px 0px;
 }
 .forecast-min {
   opacity: 0.6;
