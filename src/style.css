@@ -55,9 +55,14 @@ hr {
   border-color: #aa97c7;
   margin: 0;
 }
-.btn :hover {
+.btn:active,
+.btn:focus {
+  color: #575e94;
+}
+.btn:hover {
   cursor: pointer;
   opacity: 0.9;
+  color: #575e94;
 }
 #submit-button {
   width: 12%;
